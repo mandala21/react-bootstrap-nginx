@@ -1,13 +1,16 @@
 import React from "react";
 import NotFoundAnimation from "../../components/NotFoundAnimation";
+import { CenterWindowsContainer } from "../../components/Containers"
 
 function Page404() {
     return (
         <>
-            <NotFoundAnimation width={200} />
-            <div>
-                <h1>404 - Page not Found</h1>
-                <p>Desculpe página não encontrada</p>
+            <div style={{marginTop:120}}>
+                <NotFoundAnimation />
+                <center>
+                    <h1><blod>404</blod></h1>
+                    <h3>Desculpe página não encontrada</h3>
+                </center>
             </div>
         </>
     );

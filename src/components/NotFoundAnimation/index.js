@@ -1,18 +1,20 @@
 import React from "react";
-import ReacBodyMovin from "react-bodymovin";
+import Lottie from "react-lottie";
 import NotFoundJsonAnimation from "../../animations/not-found.json"
 
 function NotFoundAnimation({width}){
     const bodyMovinOption = {
-        loop:true,
-        autoplay:true,
-        prerender:true,
-        animationData:NotFoundJsonAnimation,
+        loop: true,
+        autoplay: true, 
+        animationData: NotFoundJsonAnimation,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
     }
 
     return (
         <div style={{width:width}}>
-            <ReacBodyMovin options={bodyMovinOption} />
+            <Lottie options={bodyMovinOption} height={150} width={200} />
         </div>
     );
 }

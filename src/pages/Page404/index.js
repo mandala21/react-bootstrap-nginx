@@ -1,10 +1,11 @@
 import React from "react";
 import NotFoundAnimation from "../../components/NotFoundAnimation";
-import { CenterWindowsContainer } from "../../components/Containers"
+import BodyBlue from "../../styles/BodyBlue";
 
-function Page404() {
+function Page404(props) {
     return (
         <>
+            <BodyBlue/>
             <div style={{marginTop:120}}>
                 <NotFoundAnimation />
                 <center>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Jumbotron, Button, Container } from "react-bootstrap";
 
-function Home(){
+function Home(props){
     return (
         <Container>
             <Jumbotron>

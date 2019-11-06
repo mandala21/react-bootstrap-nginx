@@ -1,12 +1,10 @@
-import styled from "styled-components";
+import React from "react";
 
-
-export const CenterWindowsContainer = styled.div`
-    display:flex;
-    flex:1;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    width:100vh;
-    flex-direction:column;
-`;
+export function AppLayout(props) {
+    return (
+        <>
+            <h1>App Layout</h1>
+            <p>Secret page</p>
+        </>
+    );
+}

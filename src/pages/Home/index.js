@@ -1,18 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Jumbotron, Button, Container } from "react-bootstrap";
+import { Button, Col, Row } from "antd";
+import { LoginStyle } from './styles';
 
 function Home(props){
     return (
-        <Container>
-            <Jumbotron>
-                <h3>Hello World!</h3>
-                <p>I am home page :)</p>
-            </Jumbotron>
-            <Link to="/login">
-                <Button>Logar</Button>
-            </Link>
-        </Container>
+        <>
+            <Row style={{height:'100%'}}>
+                <Col span={16}>
+                    <LoginStyle background="#BFFFEF"> Ola </LoginStyle>
+                </Col>
+                <Col span={8}>
+                    Login Panel
+                </Col>
+            </Row>
+        </>
     );
 }
 

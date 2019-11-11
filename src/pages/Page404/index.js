@@ -1,11 +1,9 @@
 import React from "react";
 import NotFoundAnimation from "../../components/NotFoundAnimation";
-import BodyBlue from "../../styles/BodyBlue";
 
 function Page404(props) {
     return (
         <>
-            <BodyBlue/>
             <div style={{marginTop:120}}>
                 <NotFoundAnimation />
                 <center>

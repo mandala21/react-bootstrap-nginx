@@ -1,5 +1,5 @@
 import React from "react";
-import { Input } from "antd";
+import { Input, Button } from "antd";
 
 
 
@@ -17,6 +17,17 @@ export const InputPasswordGoup = function ({label}) {
         <div className="mg-bt-14">
             <p>{label}</p>
             <Input.Password />
+        </div>
+    );
+}
+
+export const ButtonGroup = function(props){
+    return (
+        <div className="mg-bt-14">
+            <Button 
+                {...props}>
+                {props.label}
+            </Button>
         </div>
     );
 }

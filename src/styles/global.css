@@ -10,6 +10,15 @@ body {
     height: 100%;
 }
 
+.w-100 {
+    width: 100%;
+}
+
 .mg-bt-14 {
     margin-bottom: 14px;
 }
+
+.pd-64 {
+    padding: 64px;
+}
+

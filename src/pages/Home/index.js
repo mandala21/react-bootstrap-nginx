@@ -1,9 +1,10 @@
 import React from "react";
-import { Button, Col, Row } from "antd";
-import { InputTextGroup, InputPasswordGoup, ButtonGroup } from "../../components/Input";
+import { Col, Row } from "antd";
+import {  ButtonGroup } from "../../components/Input";
 import "./style.css";
+import FormLogin from "./form";
 
-function Home(props){
+function Home(props){    
     return (
         <>
             <div className="wrapper">
@@ -16,16 +17,8 @@ function Home(props){
                     <Col span={8}>
                         <div className="pd-64">
                             <h1>Acesse sua conta</h1>
-                            <div>
-                                <InputTextGroup label="Email" />
-                            </div>
-                            <div>
-                                <InputPasswordGoup label="Senha" />
-                            </div>
+                            <FormLogin />                   
                             <Row>
-                                <Col span={24}>
-                                    <ButtonGroup label="Entrar" size="large" className="w-100" type="primary" />
-                                </Col>
                                 <Col span={24}>
                                     <ButtonGroup label="Criar uma conta" className="w-100" type="dashed" size="large" />
                                 </Col>

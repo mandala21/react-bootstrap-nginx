@@ -3,23 +3,19 @@ import { Input, Button } from "antd";
 
 
 
-export const InputTextGroup = function ({label}) {
-    return (
-        <div className="mg-bt-14">
-            <p>{label}</p>
-            <Input />
-        </div>
-    );
-}
+export const InputTextGroup = React.forwardRef((props, ref) => (
+    <div className="mg-bt-14">
+        <p>{props.label}</p>
+        <Input {...props} />
+    </div>
+));
 
-export const InputPasswordGoup = function ({label}) {
-    return (
-        <div className="mg-bt-14">
-            <p>{label}</p>
-            <Input.Password />
-        </div>
-    );
-}
+export const InputPasswordGoup = React.forwardRef((props, ref) => (
+    <div className="mg-bt-14">
+        <p>{props.label}</p>
+        <Input.Password {...props} />
+    </div>
+));
 
 export const ButtonGroup = function(props){
     return (

@@ -2,6 +2,10 @@ body {
     height: 100vh !important;
 }
 
+p {
+    margin-bottom: 8px !important;
+}
+
 /*
 * utils
 */
